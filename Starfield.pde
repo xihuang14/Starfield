@@ -12,20 +12,28 @@ void draw()
 class NormalParticle
 {
 	//your code here
-double x;
-double y;
+int myX, myY;
 double angle;
 double speed;
+myColor;
 
-NormalParticle(){
+NormalParticle(myX, myY, angle, speed, myColor){
+  double myX, myY, angle, speed;
+  myX = 250;
+  myY = 250;
+  angle = (int)(Math.random()*15);
+  speed = (int)(Math.random()*2 * Math.PI);
+  myColor = (int0(Math.random()*256, (int)(Math.random()*256, (int)(Math.random()*256);
+}
+void show(myX,myY){
+    fill(myColor);
+    ellipse(myX,myY,20,10);
   
 }
 void move(){
-}
-void show(){
-}
-  fill(255,0,0);
-  ellipse(x,y,10,10);
+  myX = myX + (int)(Math.random()*3-1);
+  myY = myY + (int)(Math.random()*3-1);
+  } 
 }
 interface Particle
 {
