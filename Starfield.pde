@@ -23,7 +23,8 @@ NormalParticle(myX, myY, angle, speed, myColor){
   myY = 250;
   angle = (int)(Math.random()*15);
   speed = (int)(Math.random()*2 * Math.PI);
-  myColor = (int0(Math.random()*256, (int)(Math.random()*256, (int)(Math.random()*256);
+  myColor = (int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256);
+}
 }
 void show(myX,myY){
     fill(myColor);
@@ -34,7 +35,7 @@ void move(){
   myX = myX + (int)(Math.random()*3-1);
   myY = myY + (int)(Math.random()*3-1);
   } 
-}
+
 interface Particle
 {
   public void show();
